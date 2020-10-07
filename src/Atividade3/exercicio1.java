@@ -1,10 +1,14 @@
 package Atividade3;
 
 import javax.swing.*;
+import java.io.InputStream;
 
 public class exercicio1 {
 
     public static void main(String args[]) {
+        InputStream cor = (System.in);
+        System.out.println(cor);
+        System.exit(0);
         novamente();
     }
     public static void novamente() {
@@ -19,9 +23,9 @@ public class exercicio1 {
             int idadeX, sexoX, mais_velho = 0, mais_nova = 120;
             for (int i = 0; i < A; i++) {
 
-                String altura = JOptionPane.showInputDialog((i + 1) + "º Pessoa - Digite a altura");
-                altura = altura.replace(',', '.');
-                alturaX = Double.parseDouble(altura);
+                String altura2 = JOptionPane.showInputDialog((i + 1) + "º Pessoa - Digite a altura");
+                altura2 = altura2.replace(',', '.');
+                alturaX = Double.parseDouble(altura2);
 
                 String idade = JOptionPane.showInputDialog((i + 1) + "º Pessoa - Digite a idade");
                 idadeX = Integer.parseInt(idade);

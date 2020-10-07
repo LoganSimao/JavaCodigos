@@ -19,7 +19,7 @@ public class exercicio4 {
             soma += altura[x];
         }
 
-        media =soma /10;
+        media = soma /10;
         String formato = String.format("%.2f",media);
         JOptionPane.showMessageDialog(null,"A média das 10 alturas é: "+ formato);
     }
